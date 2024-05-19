@@ -1,0 +1,54 @@
+*{
+    margin:0px ;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+ .main_box{
+    height: 100vh;
+    width: 100%;
+    background: url('img1.jpg') right no-repeat;
+    background-size: cover ;
+    opacity: 0.7;
+}
+.main_box .sidebar_menu{
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    background: 0 0 5px rgba(152, 14, 14, 1.6);
+    box-shadow: 0 0 5px rgb(183, 179, 179);
+}
+.sidebar_menu .logo a{
+    color: white;
+    font-size: 28px;
+    text-transform:capitalize;
+    font-weight:900 ;
+    text-decoration: none;
+    position: fixed;
+    line-height: 60px;
+    left: 40px;
+
+ }
+ .sidebar_menu .menu{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+}
+.sidebar_menu .menu li{
+    margin: 6px;
+    padding: 10px 10px;
+   
+}
+
+.sidebar_menu i{
+    color: white;
+    margin: 6px;
+    padding: 10px 10px;
+}
+.sidebar_menu .menu li a{
+    color: white;
+    font-weight: 800;
+
+}
+.sidebar_menu .menu a::hover{
+    
+}
