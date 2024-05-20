@@ -1,54 +1,58 @@
 *{
-    margin:0px ;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
- }
- .main_box{
-    height: 100vh;
-    width: 100%;
-    background: url('img1.jpg') right no-repeat;
-    background-size: cover ;
-    opacity: 0.7;
-}
-.main_box .sidebar_menu{
-    position: fixed;
-    height: 100vh;
-    width: 250px;
-    background: 0 0 5px rgba(152, 14, 14, 1.6);
-    box-shadow: 0 0 5px rgb(183, 179, 179);
-}
-.sidebar_menu .logo a{
-    color: white;
-    font-size: 28px;
-    text-transform:capitalize;
-    font-weight:900 ;
     text-decoration: none;
-    position: fixed;
-    line-height: 60px;
-    left: 40px;
-
- }
- .sidebar_menu .menu{
-    position: absolute;
-    top: 60px;
-    width: 100%;
+    border: none;
+    outline: none;
 }
-.sidebar_menu .menu li{
-    margin: 6px;
-    padding: 10px 10px;
+body{
+    background: #189ec7;
+    color: rgb(206, 199, 199);
+}
+
+.sidebar_menu{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.sidebar_menu .navbar{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 40vh;
+    /* border: 2px solid yellow; */
+    box-shadow:  0 0 9px 2px gainsboro;
+    border: 5px solid #189ec7;
+  
+}
+.navbar p{
+    padding-top: 10px;
+}
+
+.sidebar_menu .navbar i{
    
 }
-
-.sidebar_menu i{
-    color: white;
-    margin: 6px;
-    padding: 10px 10px;
+.sidebar_menu .navbar a{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 15px 20px;
 }
-.sidebar_menu .menu li a{
-    color: white;
-    font-weight: 800;
+.menu_item{
+    padding: 10px 2px;
 
 }
-.sidebar_menu .menu a::hover{
-    
+
+.menu_item i{
+    padding-left: 20px;
+    font-size: 21px;
+}
+.navbar .menu_item:nth-child(1),
+.navbar .menu_item:nth-child(9){
+    border-bottom: 1px solid wheat;
+    margin-top: 6px 0px;
+}
+.navbar .menu_item:nth-child(9){
+    padding-bottom: 50px;
 }
